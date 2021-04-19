@@ -1,10 +1,12 @@
 package tr.edu.trakya.cemtaskin.sfpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import tr.edu.trakya.cemtaskin.sfpetclinic.model.Pet;
 import tr.edu.trakya.cemtaskin.sfpetclinic.services.CrudService;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet,Long> implements CrudService<Pet,Long> {
 
     @Override

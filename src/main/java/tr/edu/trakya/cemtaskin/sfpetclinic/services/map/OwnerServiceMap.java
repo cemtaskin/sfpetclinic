@@ -1,10 +1,13 @@
 package tr.edu.trakya.cemtaskin.sfpetclinic.services.map;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import tr.edu.trakya.cemtaskin.sfpetclinic.model.Owner;
 import tr.edu.trakya.cemtaskin.sfpetclinic.services.CrudService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements CrudService<Owner,Long> {
     @Override
     public Set<Owner> findAll() {
